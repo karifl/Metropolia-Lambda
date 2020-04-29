@@ -63,7 +63,7 @@ public class UsingJCAPI {
         
        //Lajitellaan pienimmästä suurimpaan
        cardUsers.sort((TrafficCard s1, TrafficCard s2)-> Integer.compare(s1.mTravellerNumber, s2.mTravellerNumber)); 
-       https://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764
+       //https://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764
           
        for(TrafficCard t:cardUsers){
                 if(tester.test(t)){

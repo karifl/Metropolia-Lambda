@@ -15,14 +15,6 @@ public class UsingJCAPI {
     /**
      * @param args the command line arguments
      */
-
-    
-/*    interface Compare {
-    
-    public boolean test(TrafficCard t);
-   
-    
-}*/
   
     
     public static void main(String[] args) {
@@ -48,18 +40,11 @@ public class UsingJCAPI {
         
         System.out.println("Matkakortit matkustajanumeron perusteella pienimmästä suurimpaan");
         printTrafficCardsWithPredicate(cardUsers, t-> t.mTravellerNumber !=0);        
+       
         
-        
-        //cardUsers.sort((TrafficCard s1, TrafficCard s2)-> Integer.compare(s1.mTravellerNumber, s2.mTravellerNumber)); 
-        //https://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764
-             
-        
-      
-        
+          
     }
     public static void printTrafficCardsWithPredicate(ArrayList <TrafficCard> cardUsers, Predicate<TrafficCard> tester){
-       // cardUsers.sort(new TravellerNumberComparator (cardUsers.get(1).mTravellerNumber));
-       //Collections.sort(cardUsers, new TravellerNumberComparator().reversed());
         
        //Lajitellaan pienimmästä suurimpaan
        cardUsers.sort((TrafficCard s1, TrafficCard s2)-> Integer.compare(s1.mTravellerNumber, s2.mTravellerNumber)); 
